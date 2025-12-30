@@ -57,3 +57,45 @@ sales-analytics-api/
 ├── requirements.txt
 ├── README.md
 └── sales.db
+
+
+## 🔌 Endpoints Disponíveis
+
+### 📦 Sales
+- **POST `/sales`** — Cadastra uma venda
+
+### 📊 Analytics
+- **GET `/analytics/summary`** — Resumo geral  
+- **GET `/analytics/monthly`** — Vendas mensais  
+- **GET `/analytics/top-products`** — Produtos mais vendidos  
+
+---
+
+## 📥 Exemplo de Requisição
+
+### POST `/sales`
+
+```json
+{
+  "product_name": "Notebook",
+  "quantity": 2,
+  "unit_price": 3500.0,
+  "sale_date": "2024-11-10"
+}
+
+## ▶️ Como Executar o Projeto
+
+### 1️⃣ Criar ambiente virtual
+```bash
+python -m venv venv
+venv\Scripts\activate
+
+
+### ▶️ Instalar dependencias
+python -m pip install -r requirements.txt
+
+### ▶️ Subir API
+python -m uvicorn app.main:app --reload
+
+### ▶️ Acessar
+http://127.0.0.1:8000/docs
