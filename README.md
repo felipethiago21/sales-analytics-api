@@ -57,7 +57,7 @@ sales-analytics-api/
 ├── requirements.txt
 ├── README.md
 └── sales.db
-
+```
 
 ## 🔌 Endpoints Disponíveis
 
@@ -82,6 +82,7 @@ sales-analytics-api/
   "unit_price": 3500.0,
   "sale_date": "2024-11-10"
 }
+```
 
 ## ▶️ Como Executar o Projeto
 
@@ -89,13 +90,19 @@ sales-analytics-api/
 ```bash
 python -m venv venv
 venv\Scripts\activate
-
+```
 
 ### ▶️ Instalar dependencias
+```
 python -m pip install -r requirements.txt
+```
 
 ### ▶️ Subir API
+```
 python -m uvicorn app.main:app --reload
+```
 
 ### ▶️ Acessar
+```
 http://127.0.0.1:8000/docs
+```
